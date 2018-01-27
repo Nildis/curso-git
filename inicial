@@ -1,1 +1,37 @@
 Este é o documento inicial, criado por Nildis as 12:11 do dia 27/01/2018
+
+comandos utilizados:
+
+$ git init 
+#para inicializar um diretorio git (é uma pasta oculta que ele cria)
+
+$ git status 
+#ele vai dar o status do diretório, como qual é o ramo (master), quais são os arquivos que têm no diretório e quais arquivos você pode colocar no diretório
+
+$ git add inicial
+#esse comando adiciona o arquivo "inicial" ao seu git
+
+$ git config user.email "nildis@msn.com"
+#esse comando configura um email de usuário
+
+$ git config user.name "Nildis"
+#esse comando configura um nome de usuário
+
+$ git commit -m "Arquivo inicial do repositório"
+#esse comando "salva" as alterações, ou seja, faz o registro dos arquivos adicionados/modificados, junto com data, hora e um comentário/mensagem a sua escolha
+
+$ git log
+#esse comando mostra o arquivo log de modificações
+
+*feito isso no computador, ou seja, no repositório local, já foram feitas várias alterações. A ideia agora é jogar esse repositório local para um repositório central, que é on line e compartilhado. No caso eu criei no site, via meu usuário e senha, chamado de curso-git
+
+$ git remote add origin https://github.com/Nildis/curso-git.git
+#esse comando faz a ligação com o repositório criado no site do GitHub com um nome especifico, geralmente é escolhido "origin" mas pode escolher qualquer nome
+
+$ git remote -v
+#é para ver o endereço do repositório remoto
+
+$ git push -u origin master
+#esse arquivo empurra o arquivo do repositório local para o repositório principal de codenome origin, via ramo master. Deve-se informar o usuário e senha do GitHub
+
+
